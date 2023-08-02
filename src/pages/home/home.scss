@@ -556,7 +556,7 @@
 
                 @media screen and (max-width: 768px) {
                     grid-template-columns: repeat(1, 1fr);
-                    padding: 0 61px;
+                    padding: 0 50px;
                 }
 
                 .class-card {
@@ -820,6 +820,7 @@
             flex-direction: column;
             align-items: center;
             padding: 53px 160px;
+
             @media screen and (max-width: 768px) {
                 padding: 50px 20px;
             }
