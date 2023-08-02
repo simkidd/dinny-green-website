@@ -17,7 +17,7 @@ const Video = () => {
           </p>
         </div>
         <div className="video-play">
-          <div className="video-play-bg"></div>
+          {/* <div className="video-play-bg"></div> */}
           <div className="img-wrapper">
             <img src={Girl} alt="" />
           </div>

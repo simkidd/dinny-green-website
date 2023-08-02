@@ -343,6 +343,9 @@
                 background: #F2F2F2;
 
                 .circle-wrap {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
 
                     .circle-stroke {
                         border-radius: 50%;
@@ -371,9 +374,6 @@
                             font-weight: 700;
                             line-height: 24px;
                 
-                            @media screen and (max-width: 768px) {
-                                font-size: 14px;
-                            }
                         }
 
                         .card-text {
@@ -386,6 +386,7 @@
                 
                             @media screen and (max-width: 768px) {
                                 max-width: 100%;
+                                font-size: 14px;
                             }
                         }
                     }
@@ -595,6 +596,11 @@
                 position: relative;
                 width: 902px;
                 height: 484px;
+    
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    height: 100%;
+                }
 
                 .video-play-bg {
                     position: absolute;
@@ -604,8 +610,9 @@
                     width: 100%;
 
                     img {
-                        object-fit: contain;
+                        object-fit: cover;
                         width: 100%;
+                        height: 100%;
                     }
                 }
 
@@ -621,10 +628,20 @@
                     align-items: center;
                     justify-content: center;
                     background: #F9FCFE;
+        
+                    @media screen and (max-width: 768px) {
+                        width: 60px;
+                        height: 60px;
+                    }
 
                     svg {
                         font-size: 4.4rem;
                         color: #038C33;
+                        margin-left: 5px;
+            
+                        @media screen and (max-width: 768px) {
+                            font-size: 2.8rem;
+                        }
                     }
 
                     &:hover {
@@ -642,6 +659,13 @@
         flex-direction: column;
         align-items: center;
         padding: 100px 250px;
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            padding: 50px 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 50px 20px;
+        }
 
         .contact-top {
             h2 {
@@ -666,6 +690,10 @@
                 width: 100%;
                 gap: 20px;
                 margin-bottom: 20px;
+    
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+                }
 
                 .input-group {
                     border-radius: 3px;
@@ -679,6 +707,7 @@
                         outline: 0;
                         padding: 12px 19px;
                         width: 100%;
+                        resize: none;
                     }
                 }
             }
@@ -689,9 +718,11 @@
                 align-items: center;
                 justify-content: center;
                 margin-top: 30px;
-
+                
                 .btn {
                     border: 0;
+                    font-size: 16px;
+                    font-family: 'Poppins', sans-serif;
                 }
             }
         }

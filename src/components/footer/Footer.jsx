@@ -80,7 +80,7 @@ const Footer = () => {
           <div className="col-5">
             <div className="container">
               <span>
-                Copyright &copy;2021 Dinny Green International. Designed by{" "}
+                Copyright &copy;{new Date().getFullYear()} Dinny Green International. Designed by{" "}
                 <span>
                   {" "}
                   <Link to="/" className="text-white-50">
