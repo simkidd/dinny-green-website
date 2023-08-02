@@ -13,9 +13,10 @@ const Stories = () => {
           <div className="avatar-side">
             <img src={Man} alt="" />
           </div>
-          <div className="avatar-main">
-            <div className="dashed-circle"></div>
-            <img src={Woman} alt="" />
+          <div className="dashed-circle">
+            <div className="avatar-main">
+              <img src={Woman} alt="" />
+            </div>
           </div>
           <div className="avatar-side">
             <img src={Man2} alt="" />
