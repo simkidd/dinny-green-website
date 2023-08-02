@@ -35,10 +35,8 @@ const AboutSection = () => {
       </div>
 
       <div className="about-right">
-        <div className="">
-          <img src={Girl} alt="" />
-          <img className="circle" src={Circle} alt="" />
-        </div>
+        <img src={Girl} alt="" />
+        <img className="circle" src={Circle} alt="" />
       </div>
     </div>
   );
