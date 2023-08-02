@@ -32,6 +32,7 @@
 
                 &:nth-of-type(4) {
                     width: 238px;
+
                     @media screen and (max-width: 768px) {
                         width: 100%;
                     }
@@ -125,6 +126,7 @@
                             line-height: 170.9%;
                             /* 22.217px */
                             width: 100%;
+                            font-family: 'Poppins', sans-serif;
 
                             &::placeholder {
                                 color: #038C33;
