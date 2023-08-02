@@ -33,7 +33,7 @@ const ContactSection = () => {
               id=""
               cols="30"
               rows="7"
-              placeholder="message"
+              placeholder="Message"
             ></textarea>
           </div>
         </div>
