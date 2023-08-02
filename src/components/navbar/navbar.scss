@@ -7,9 +7,22 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            padding: 10px 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 10px 20px;
+        }
 
         .logo {
             height: 58px;
+
+            @media screen and (max-width: 768px) {
+                height: 48px;
+            }
 
             img {
                 object-fit: contain;
@@ -18,10 +31,37 @@
             }
         }
 
+        .menu-btn {
+            display: none;
+            cursor: pointer;
+            z-index: 99;
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                display: block;
+            }
+
+            @media screen and (max-width: 768px) {
+                display: block;
+            }
+
+            svg {
+                color: #f2f2f2;
+                font-size: 24px;
+            }
+        }
+
         .navlinks {
             display: flex;
             align-items: center;
             gap: 65px;
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                display: none;
+            }
+
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
 
             li {
                 a {
@@ -40,5 +80,50 @@
                 }
             }
         }
+        .mobile-navlinks{
+            display: none;
+            position: absolute;
+            width: 100%;
+            background: #003412;
+            height: 100vh;
+            color: #f2f2f2;
+            left: 0;
+            top: 0;
+            z-index: 10;
+            
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            @media screen and (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                
+            }
+            li{
+                margin-bottom: 2rem;
+                a {
+                    color: #fff;
+
+                    &:hover {
+                        color: #038C33;
+                    }
+
+                    &.contact {
+                        background-color: #038c33;
+                        color: #f2f2f2;
+                        border-radius: 3.33px;
+                        padding: 13px 40px;
+                    }
+                }
+            }
+        }
+
     }
 }

@@ -7,12 +7,23 @@
         align-items: center;
         padding: 8px 180px;
         font-size: 12px;
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            padding: 4px 20px;
+        }
+        @media screen and (max-width: 768px){
+            padding: 4px 20px;
+        }
 
         .header-left {
             ul {
                 display: flex;
-                align-items: center;
+                // align-items: center;
                 gap: 10px;
+                
+                @media screen and (max-width: 768px){
+                    flex-direction: column;
+                    gap: 2px;
+                }
 
                 li {
                     span {
@@ -41,7 +52,7 @@
                         color: #f2f2f2;
                         border-radius: 3.33px;
                         padding: 6px 20px;
-                        
+
                         &:hover {
                             opacity: 0.8;
                         }

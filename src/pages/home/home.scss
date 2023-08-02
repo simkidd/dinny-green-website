@@ -13,9 +13,23 @@
             display: flex;
             align-items: center;
 
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                padding: 50px 20px;
+                background-position: right;
+            }
+
+            @media screen and (max-width: 768px) {
+                padding: 50px 20px;
+                background: #e6e5e5;
+            }
+
             .banner-left {
                 width: 100%;
                 max-width: 45%;
+
+                @media screen and (max-width: 768px) {
+                    max-width: 100%;
+                }
 
                 .col-top {
                     margin-bottom: 30px;
@@ -78,6 +92,10 @@
                 left: 0;
                 bottom: 0;
                 width: 100%;
+
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
             }
         }
     }
@@ -93,6 +111,16 @@
             padding: 174px 160px;
             position: relative;
 
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                padding: 100px 20px;
+            }
+
+            @media screen and (max-width: 768px) {
+                padding: 80px 20px;
+                flex-direction: column;
+                gap: 40px;
+            }
+
             .counter-img {
                 flex: 1;
 
@@ -102,6 +130,10 @@
                     justify-content: center;
                     position: relative;
                     margin-right: 40px;
+
+                    @media screen and (max-width: 768px) {
+                        margin-right: 0;
+                    }
 
                     .girl-container {
                         width: 370px;
@@ -140,6 +172,10 @@
                 color: #038C33;
                 padding-left: 40px;
 
+                @media screen and (max-width: 768px) {
+                    padding-left: 0;
+                }
+
                 .ct-top {
                     h2 {
                         font-size: 40px;
@@ -154,6 +190,10 @@
                         width: 100%;
                         max-width: 72%;
                         margin-bottom: 5px;
+
+                        @media screen and (max-width: 768px) {
+                            max-width: 100%;
+                        }
                     }
 
                     .row {
@@ -195,8 +235,6 @@
 
                 .ct-bottom {
                     margin-top: 40px;
-
-                    a {}
                 }
 
             }
@@ -208,6 +246,10 @@
                 right: -65px;
                 top: 40%;
                 z-index: -2;
+    
+                @media screen and (max-width: 768px) {
+                    top: 85%;
+                }
             }
         }
     }
