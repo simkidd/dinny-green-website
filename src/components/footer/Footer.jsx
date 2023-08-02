@@ -2,7 +2,12 @@ import React from "react";
 import "./footer.scss";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/Group 61.png";
-import { FaMousePointer } from "react-icons/fa";
+import {
+  FaMousePointer,
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedin,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -52,44 +57,46 @@ const Footer = () => {
           </div>
           <div className="footer-top-col">
             <h4>Newsletter</h4>
-            <Link>Sign up to newsletter to get Latest updates</Link>
+            <p>Sign up to newsletter to get Latest updates</p>
 
             <form>
               <div className="newsletter-input">
-                <input type="text" />
+                <input type="text" placeholder="Enter Email address" />
                 <button className="btn btn-1">
                   <FaMousePointer />
                 </button>
               </div>
-              <ul>
+            </form>
+              <ul className="footer-socials">
                 <li>
-                  <Link>Fa</Link>
+                  <Link>
+                    <FaFacebookF />
+                  </Link>
                 </li>
                 <li>
-                  <Link>Tw</Link>
+                  <Link>
+                    <FaTwitter />
+                  </Link>
                 </li>
                 <li>
-                  <Link>In</Link>
+                  <Link>
+                    <FaLinkedin />
+                  </Link>
                 </li>
               </ul>
-            </form>
           </div>
         </div>
-        <hr />
         <div className="footer-bottom">
-          <div className="col-5">
-            <div className="container">
-              <span>
-                Copyright &copy;{new Date().getFullYear()} Dinny Green International. Designed by{" "}
-                <span>
-                  {" "}
-                  <Link to="/" className="text-white-50">
-                    John Mason
-                  </Link>
-                </span>
-              </span>
-            </div>
-          </div>
+          <p>
+            Copyright &copy;{new Date().getFullYear()} Dinny Green
+            International. Designed by{" "}
+            <span>
+              {" "}
+              <Link to="/" className="text-white-50">
+                John Mason
+              </Link>
+            </span>
+          </p>
         </div>
       </div>
     </div>

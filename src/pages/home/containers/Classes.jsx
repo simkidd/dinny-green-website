@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ClassCard from "../../../components/cards/ClassCard";
+import { classList } from "../../../data/classes";
 
 const Classes = () => {
   return (
@@ -14,9 +15,16 @@ const Classes = () => {
         </p>
 
         <div className="class-cards">
-          <ClassCard />
-          <ClassCard />
-          <ClassCard />
+          {classList.map((enroll, i) => (
+            <ClassCard
+              key={i}
+              img={enroll.img}
+              duration={enroll.duration}
+              date={enroll.date}
+              title={enroll.title}
+              info={enroll.info}
+            />
+          ))}
         </div>
 
         <div className="course-btn">

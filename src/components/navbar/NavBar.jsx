@@ -3,6 +3,7 @@ import "./navbar.scss";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/Group_60.png";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { FiChevronDown } from "react-icons/fi";
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -21,7 +22,7 @@ const NavBar = () => {
         </div>
 
         <div className="menu-btn" onClick={handleMenu}>
-          {showMenu ? <FaTimes/> : <FaBars />}
+          {showMenu ? <FaTimes /> : <FaBars />}
         </div>
 
         <ul className={showMenu ? "mobile-navlinks" : "navlinks"}>
@@ -39,6 +40,7 @@ const NavBar = () => {
           </li>
           <li>
             <Link>Courses</Link>
+            <FiChevronDown />
           </li>
           <li>
             <Link>Blog</Link>
