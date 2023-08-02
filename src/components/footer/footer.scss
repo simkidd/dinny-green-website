@@ -1,0 +1,27 @@
+.footer {
+    width: 100%;
+
+    .footer-container {
+        background: #003412;
+        color: #F2F2F2;
+        padding: 96px 166px;
+        display: flex;
+        flex-direction: column;
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+
+            .footer-top-col {
+                max-width: 274px;
+                width: 100%;
+
+                img {
+                    width: 120.64px;
+                    height: 99.642px;
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+}
