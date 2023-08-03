@@ -1,7 +1,12 @@
 .navbar {
     width: 100%;
     background: #003412;
-
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    // @media screen and (max-width: 768px) {
+    //     left:0;
+    // }
     .navbar-inner-container {
         padding: 12px 180px;
         display: flex;
