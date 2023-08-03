@@ -80,7 +80,8 @@
                 }
             }
         }
-        .mobile-navlinks{
+
+        .mobile-navlinks {
             display: none;
             position: absolute;
             width: 100%;
@@ -103,11 +104,14 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                transition: all 0.3s ease-in-out;
 
-                
+
             }
-            li{
+
+            li {
                 margin-bottom: 2rem;
+
                 a {
                     color: #fff;
 

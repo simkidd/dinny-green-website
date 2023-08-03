@@ -7,12 +7,14 @@ const Classes = () => {
   return (
     <div className="classes-section">
       <div className="class-container">
-        <h2 className="">Popular Classes</h2>
-        <p className="">
-          We have built hospitals, arranged doctor appointments have the
-          diagnose and treat <br /> your Lorem ipsum dolor sit amet consectetur
-          adipisicing elit.{" "}
-        </p>
+        <div className="classes-top">
+          <h2>Popular Classes</h2>
+          <p>
+            We have built hospitals, arranged doctor appointments have the
+            diagnose and treat yourem ipsu r aol ad meniam, quis nostrud
+            exercitation.
+          </p>
+        </div>
 
         <div className="class-cards">
           {classList.map((enroll, i) => (

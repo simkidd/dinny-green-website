@@ -239,7 +239,7 @@
                                 line-height: 24px;
 
                                 @media screen and (max-width: 768px) {
-                                   font-size: 14px;
+                                    font-size: 14px;
                                 }
                             }
                         }
@@ -513,7 +513,6 @@
     }
 
     /* classes section */
-
     .classes-section {
         box-sizing: border-box;
         width: 100%;
@@ -524,6 +523,8 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
+            width: 100%;
+            box-sizing: border-box;
 
             @media screen and (min-width: 768px) and (max-width: 1024px) {
                 padding: 50px 20px;
@@ -533,21 +534,31 @@
                 padding: 50px 20px;
             }
 
-            h2 {
-                color: #038C33;
-                font-size: 40px;
-                font-weight: 700;
-                line-height: 139.9%;
-                /* 55.96px */
-                text-align: center;
-            }
+            .classes-top {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
-            p {
-                color: #1F6036;
-                text-align: center;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 24px;
+                h2 {
+                    color: #038C33;
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 139.9%;
+                    /* 55.96px */
+                    text-align: center;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    color: #1F6036;
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    width: 100%;
+                    max-width: 680px;
+                }
             }
 
             .class-cards {
@@ -906,6 +917,145 @@
     }
 
     /* instructor section*/
+    .instructor-section {
+        width: 100%;
+
+        .instructor-container {
+            padding: 100px 160px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            box-sizing: border-box;
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                padding: 50px 20px;
+    
+            }
+    
+            @media screen and (max-width: 768px) {
+                padding: 50px 20px;
+            }
+
+            .instructor-top {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                h2 {
+                    color: #038C33;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 139.9%;
+                    /* 55.96px */
+                }
+
+                p {
+                    text-align: center;
+                    color: #6C757D;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    /* 150% */
+                    width: 100%;
+                    max-width: 712px;
+                }
+            }
+
+            .instructor-cards {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 35px;
+                margin: 45px 0;
+                
+                @media screen and (max-width: 768px) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                .instructor-card {
+                    width: 100%;
+                    height: 390px;
+                    overflow: hidden;
+                    position: relative;
+
+                    .instructor-card-img {
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .instructor-details {
+                            position: absolute;
+                            left: 25px;
+                            bottom: 40px;
+                            z-index: 1;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+
+                            .instructor-tag {
+                                border-radius: 3.33px;
+                                background: #ADD9BD;
+                                padding: 5px 22px;
+                                color: #038C33;
+                                font-family: 'Poppins',
+                                    sans-serif;
+                                font-size: 12px;
+                                font-weight: 500;
+                                width: fit-content;
+                            }
+
+                            .instructor-title {
+                                width: 232px;
+                                color: #FFF;
+                                font-family: 'Lato', sans-serif;
+                                font-size: 16px;
+                                font-weight: 700;
+                                line-height: 24px;
+                                /* 150% */
+                            }
+
+                            .instructor-date {
+                                color: #FFF;
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+                                font-family: 'Lato', sans-serif;
+                                font-size: 14.4px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .gradient-fill {
+                            width: 100%;
+                            height: 189px;
+                            flex-shrink: 0;
+                            border-radius: 0px 0px 5px 5px;
+                            background: linear-gradient(180deg, rgba(3, 140, 51, 0.00) 0%, rgba(3, 140, 51, 0.60) 78.88%, #038C33 100%);
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+    }
 
     /* contact section*/
     .contact-section {
