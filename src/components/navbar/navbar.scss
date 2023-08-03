@@ -84,6 +84,9 @@
                     }
                 }
             }
+            .nav-circle{
+                display: none;
+            }
         }
 
         .mobile-navlinks {
@@ -110,7 +113,15 @@
                 align-items: center;
                 justify-content: center;
                 transition: all 0.3s ease-in-out;
-
+                // box-sizing: border-box;
+                overflow: hidden;
+                .nav-circle{
+                    position: absolute;
+                    bottom: -4rem;
+                    right: -65px;
+                    z-index: -1;
+                    opacity: 0.3;
+                }
 
             }
 

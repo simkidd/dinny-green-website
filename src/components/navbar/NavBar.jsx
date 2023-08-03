@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/images/Group_60.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FiChevronDown } from "react-icons/fi";
+import Circle from "../../assets/images/Mask Group (1).png";
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -48,6 +49,7 @@ const NavBar = () => {
           <li>
             <Link className="contact">Contact</Link>
           </li>
+          <img className="nav-circle" src={Circle} alt="" />
         </ul>
       </div>
     </div>
